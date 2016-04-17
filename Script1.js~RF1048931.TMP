@@ -1,0 +1,52 @@
+// JavaScript source code
+    function Setup() {
+    ShowTopic();
+}
+
+ var modal = UIkit.modal("#addTopicModal");
+ 
+ $('#addForumButton').click(function () {
+    modal.show();
+ });
+
+ $('#cancelThisTopicButton').click(function () {
+    modal.hide();
+ });
+
+
+     $('#addThisTopicButton').click(function () {
+         var topic = {};
+         topic.title = $('#topicTitle').val();
+         topic.text = $('#textArea').val();
+
+         localStorage.setItem('topic', JSON.stringify(topic));
+         modal.hide();
+     });
+
+
+     function GetTopic() {
+         var localData = JSON.parse(localStorage.getItem('topic'));
+         console.log(localData);
+         return localData;
+     }
+
+      function ShowTopic() {
+          var localData = GetTopic();
+
+          var i_Title = localData.title;
+          var i_Text = localData.text;
+         
+          $('#showThisTitle').GetTopic();
+          //localData.text = $('#showThisText').val();
+          console.log(localData);
+       
+          
+        }
+
+      Setup();
+
+//$('#getThisTopic').JSON.parse(localStorage.getItem('topic'));
+
+
+
+

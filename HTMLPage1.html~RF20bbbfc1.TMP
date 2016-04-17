@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Forum Test</title>
+    <link rel="stylesheet" type="text/css" href="./css/uikit.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/uikit.gradient.min.css" />
+    <style>
+    textarea {
+               width: 100px;
+               height: 150px;
+               resize: none;
+    }
+    </style>
+</head>
+<body>
+    <div class="uk-container uk-container-center uk-margin-top">
+        <div class="uk-panel uk-panel-box uk-align-left uk-margin-large-top">
+            <h3 class="uk-panel uk-animation-scale-up">Hello And Welcome!</h3>
+            <ul class="uk-nav uk-nav-side uk-pos-center">
+                <!--<li><a href="#alltopics">All Topics</a></li>-->
+                <li><button id="addForumButton" class="uk-button uk-button-primary uk-align-center uk-margin-large-top"><i class="uk-icon-edit"></i>  add</button></li>
+            </ul>
+        </div>
+
+
+
+
+        <div id="addTopicModal" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <button type="button" class="uk-modal-close uk-close uk-close-alt"></button>
+            <!--<div class="uk-modal-header">
+                
+            </div>-->
+            <div class="uk-grid uk-panel-title">
+                <p class="uk-align-center uk-margin-small">Write a new message</p>
+            </div>
+            <div class="uk-modal-footer">
+                <input type="text" id="topicTitle" name="topicTitle" class="uk-panel-title uk-width-*" placeholder="What is the topic you would like to talk about?">
+                <textarea id="textArea" name="textArea" class="uk-panel uk-align-center uk-width-*" placeholder="Type your text here.."></textarea>
+                <button id="addThisTopicButton" class="uk-button uk-button-success uk-align-center">Add This Topic</button>
+                <button id="cancelThisTopicButton" class="uk-button uk-button-danger uk-align-center">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+        
+        <!--<div id="addTopicModal" class="uk-modal">
+            <div class="uk-modal-dialog">
+                <button type="button" class="uk-modal-close uk-close"></button>
+                <div class="uk-modal-header">
+                    <input type="text" id="topicTitle" name="topicTitle" class="uk-panel-title uk-width-*" placeholder="What is the topic you would like to talk about?">
+                </div>
+                <div class="uk-modal-footer">
+                    <textarea id="textArea" name="textArea" class="uk-align-center uk-width-*" placeholder="Type your text here.."></textarea>
+                </div>
+            </div>
+        </div>-->
+
+        
+       
+
+
+
+        <!--<div class="uk-grid uk-align-center uk-margin-large-top">
+            <div class="uk-width-medium-1-2">
+                <div class="uk-panel uk-panel-box uk-align-center">
+                    <input type="text" id="topicTitle" name="topicTitle" class="uk-panel-title uk-width-*" placeholder="What is the topic you would like to talk about?">
+                    <textarea id="textArea" name="textArea" class="uk-align-center uk-width-*" placeholder="Type your text here.."></textarea>
+                    <button onclick="save_data()" class="uk-button uk-button-primary uk-align-center">Add to Forum</button>
+                </div>
+            </div>
+        </div>-->
+
+
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="./js/uikit.min.js"></script>
+<script type="text/javascript" src="./Script1.js"></script>
+</body>
+</html>
